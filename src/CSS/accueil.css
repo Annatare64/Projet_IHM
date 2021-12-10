@@ -1,0 +1,17 @@
+.btnacc {
+  border: 10px outset #5cbbf2;
+  background-color: lightBlue;
+  height: 300px;
+  width: 300px;
+  margin-left: 100px;
+
+  cursor: pointer;
+}
+
+.Divaccueil {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}

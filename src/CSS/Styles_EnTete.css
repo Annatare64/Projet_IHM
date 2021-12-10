@@ -1,0 +1,110 @@
+/*Reset CSS*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Avenir, sans-serif;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #20232a;
+  position: sticky;
+  top: 0px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  position: relative;
+}
+
+nav ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
+}
+
+nav a:hover {
+  color: rgba(0, 47, 255, 0.473);
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.sous {
+  display: none;
+  box-shadow: 0px 1px 2px white;
+  background-color: #20232a;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul li:hover .sous {
+  display: block;
+}
+
+.sous li {
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+.sous a {
+  padding: 10px;
+  border-bottom: none;
+}
+.sous a:hover {
+  border-bottom: none;
+  background-color: white;
+}
+.deroulant > a::after {
+  content: " ▼";
+  font-size: 12px;
+}
+
+.conteneur {
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+.En-tete1 {
+  background-color: #20232a;
+}
+
+.Titre {
+  color: white;
+}
+
+.flotte {
+  float: right;
+}
+
+.debut {
+  width: 10;
+  height: 40px;
+  background-color: #5cbbf2;
+}
+.debut:before,
+.debut:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.debut div {
+  float: left;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
