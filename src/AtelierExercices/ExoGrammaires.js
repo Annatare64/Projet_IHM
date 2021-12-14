@@ -66,6 +66,10 @@ class ExoGramm extends React.Component {
     ]
   };
 
+  onSubmit = (event) => {
+    event.preventDefault();
+  };
+
   displayExoVocab(value) {
     const exo1 = document.getElementById("body");
     if (value === 1) {
@@ -137,7 +141,7 @@ class ExoGramm extends React.Component {
     );
 
     return (
-      <form>
+      <form onSubmit={this.onSubmit}>
         <h4>
           <u>{title}</u>
         </h4>

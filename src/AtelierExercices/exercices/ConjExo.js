@@ -4,7 +4,6 @@ import ReactDOM from "react-dom";
 import { Link, NavLink } from "react-router-dom";
 
 import "../../CSS/Exo.css";
-import ExoConj from "../ExoConjugaison";
 
 class ExoConj1 extends React.Component {
   state = {
@@ -133,11 +132,6 @@ class ExoConj1 extends React.Component {
       return <h5>{item.donnees}</h5>;
     });
   };
-
-  displayGramm() {
-    const exo1 = document.getElementById("body");
-    ReactDOM.render(<ExoConj />, exo1);
-  }
 
   render() {
     var HandleChange1 = (e) => {

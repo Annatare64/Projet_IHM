@@ -14,9 +14,13 @@ class ExoVoc extends React.Component {
     console.log("oui");
   }
 
+  onSubmit = (event) => {
+    event.preventDefault();
+  };
+
   render() {
     return (
-      <form>
+      <form onSubmit={this.onSubmit}>
         <h4>
           1 : <input placeholder="Réponse" /> <br />
           130 : <input placeholder="Réponse" /> <br />

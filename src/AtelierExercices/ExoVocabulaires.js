@@ -51,6 +51,9 @@ class ExoVocab extends React.Component {
       { id: 9, difficulté: "Difficile", type: "Exercice", nom: "La famille" }
     ]
   };
+  onSubmit = (event) => {
+    event.preventDefault();
+  };
 
   displayExoVocab(value) {
     const exo1 = document.getElementById("body");
@@ -119,7 +122,7 @@ class ExoVocab extends React.Component {
     const y = this.state.divcontainer2;
     const z = this.state.divcontainer3;
     return (
-      <form>
+      <form onSubmit={this.onSubmit}>
         <h4>
           <u>{title}</u>
         </h4>

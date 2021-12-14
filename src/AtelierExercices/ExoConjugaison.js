@@ -82,6 +82,10 @@ class ExoConj extends React.Component {
     ReactDOM.render(<ExoConj1 />, exo);
   }
 
+  onSubmit = (event) => {
+    event.preventDefault();
+  };
+
   render() {
     var HandleChange1 = (e) => {
       this.setState({ divcontainer1: !this.state.divcontainer1 });
@@ -141,7 +145,7 @@ class ExoConj extends React.Component {
     );
 
     return (
-      <form>
+      <form onSubmit={this.onSubmit}>
         <h4>
           <u>{title}</u>
         </h4>

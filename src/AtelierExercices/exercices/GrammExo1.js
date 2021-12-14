@@ -1,11 +1,10 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import { render } from "react-dom";
 import ReactDOM from "react-dom";
 import "../../CSS/Exo.css";
-import ExoGramm from "../ExoGrammaires";
-import { Link, NavLink } from "react-router-dom";
 
-class Exo1 extends React.Component {
+class ExoGramm1 extends React.Component {
   state = {
     divcontainer1: false
   };
@@ -30,6 +29,9 @@ class Exo1 extends React.Component {
     ]
   };
 
+  onSubmit = (event) => {
+    event.preventDefault();
+  };
   Terminer() {
     console.log("oui");
   }
@@ -51,18 +53,18 @@ class Exo1 extends React.Component {
         </li>
       );
     });
-    const ReponsesExo = this.TabRep.rep.map(function (exo) {
+    const ReponsesExo = this.TabRep.rep.map(function (gra) {
       return (
         <li>
           <h4>
-            {exo.id}. {exo.texte}&ensp;
+            {gra.id}. {gra.texte}&ensp;
           </h4>
         </li>
       );
     });
 
     return (
-      <form>
+      <form onSubmit={this.onSubmit}>
         <h4>
           <u>{title}</u>
         </h4>
@@ -86,4 +88,4 @@ class Exo1 extends React.Component {
   }
 }
 
-export default Exo1;
+export default ExoGramm1;

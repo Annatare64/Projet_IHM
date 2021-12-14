@@ -34,7 +34,7 @@ export default function App() {
           <Route exact path="/ExoGramm" element={<ExoGramm />} />
           <Route exact path="/ExoConj" element={<ExoConj />} />
           <Route exact path="/ExoVocab1" element={<ExoVocab1 />} />
-          <Route exact path="/ExoGramm1" element={<ExoGramm1 />} />
+          <Route path="/ExoGramm1" element={<ExoGramm1 />} />
           <Route exact path="/ExoConj1" element={<ExoConj1 />} />
           <Route exact path="/Guide" element={<Guide />} />
           <Route exact path="/Lexique" element={<Lexique />} />
