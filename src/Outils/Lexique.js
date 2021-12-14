@@ -71,6 +71,9 @@ class Lexique extends React.Component {
       }
     ]
   };
+  onSubmit = (event) => {
+    event.preventDefault();
+  };
 
   displayVet() {
     const Vet = document.getElementById("body");
@@ -132,7 +135,7 @@ class Lexique extends React.Component {
     );
 
     return (
-      <form>
+      <form onSubmit={this.onSubmit}>
         <h4>
           <u>{title}</u>
         </h4>

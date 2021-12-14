@@ -70,6 +70,9 @@ class Guide extends React.Component {
       }
     ]
   };
+  onSubmit = (event) => {
+    event.preventDefault();
+  };
 
   displayLeçon() {
     const present = document.getElementById("body");
@@ -131,7 +134,7 @@ class Guide extends React.Component {
     );
 
     return (
-      <form>
+      <form onSubmit={this.onSubmit}>
         <h4>
           <u>{title}</u>
         </h4>
