@@ -22,9 +22,9 @@ class MagazinesFav extends Component {
     Compteur: 0,
     Cuisine: "/magazinescui",
     Compteur1: 0,
-    Compteur2: 0,
-    Compteur3: 0,
-    Compteur4: 0,
+    Compteur2: 1,
+    Compteur3: 3,
+    Compteur4: 5,
     Compteur5: 0,
     Compteur6: 0,
     Compteur7: 0,
@@ -169,6 +169,45 @@ class MagazinesFav extends Component {
         })}*/}
         <div className="container">
           <div className="informatique">
+            <img src={logo4} alt="logo" />
+            <a className="oui" href={logo4}>
+              The Emergence of Internet of Thing
+            </a>
+            <p className="non"> Ecrire un résumé du sujet</p>
+            <button className="btnC" onClick={this.Handlecompt4}>
+              J'aime
+            </button>
+            <span>{this.state.Compteur4}</span>{" "}
+          </div>
+          <div className="info" className="informatique">
+            <img src={logo3} alt="logo" />
+            <a
+              className="oui"
+              href="https://www.jamieoliver.com/recipes/eggs-recipes/spanish-tortilla/"
+            >
+              Spanish tortilla
+            </a>
+            <p className="non"> Ecrire un résumé du sujet</p>
+            <button className="btnC" onClick={this.Handlecompt3}>
+              J'aime
+            </button>
+            <span>{this.state.Compteur3}</span>
+          </div>
+          <div className="informatique">
+            <img src={logo2} alt="logo" />
+            <a
+              className="oui"
+              href="https://www.jamieoliver.com/recipes/potato-recipes/basic-latkes/"
+            >
+              Basic latkes
+            </a>
+            <p className="non"> Ecrire un résumé du sujet</p>
+            <button className="btnC" onClick={this.Handlecompt2}>
+              J'aime
+            </button>
+            <span>{this.state.Compteur2}</span>{" "}
+          </div>
+          <div className="informatique">
             <img src={logo} alt="logo" />
             <a
               className="oui"
@@ -198,31 +237,6 @@ class MagazinesFav extends Component {
           </div>
 
           <div className="informatique">
-            <img src={logo2} alt="logo" />
-            <a
-              className="oui"
-              href="https://www.jamieoliver.com/recipes/potato-recipes/basic-latkes/"
-            >
-              Basic latkes
-            </a>
-            <p className="non"> Ecrire un résumé du sujet</p>
-            <button className="btnC" onClick={this.Handlecompt2}>
-              J'aime
-            </button>
-            <span>{this.state.Compteur2}</span>{" "}
-          </div>
-          <div className="informatique">
-            <img src={logo4} alt="logo" />
-            <a className="oui" href={logo4}>
-              The Emergence of Internet of Thing
-            </a>
-            <p className="non"> Ecrire un résumé du sujet</p>
-            <button className="btnC" onClick={this.Handlecompt4}>
-              J'aime
-            </button>
-            <span>{this.state.Compteur4}</span>{" "}
-          </div>
-          <div className="informatique">
             <img src={logo5} alt="logo" />
             <a className="oui" href={logo5}>
               The Future of Intrnet of Things
@@ -232,20 +246,6 @@ class MagazinesFav extends Component {
               J'aime
             </button>
             <span>{this.state.Compteur5}</span>{" "}
-          </div>
-          <div className="info" className="informatique">
-            <img src={logo3} alt="logo" />
-            <a
-              className="oui"
-              href="https://www.jamieoliver.com/recipes/eggs-recipes/spanish-tortilla/"
-            >
-              Spanish tortilla
-            </a>
-            <p className="non"> Ecrire un résumé du sujet</p>
-            <button className="btnC" onClick={this.Handlecompt3}>
-              J'aime
-            </button>
-            <span>{this.state.Compteur3}</span>
           </div>
         </div>
       </div>

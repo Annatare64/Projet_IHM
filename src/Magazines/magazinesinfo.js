@@ -24,7 +24,7 @@ class Magazinesinfos extends Component {
     Compteur1: 0,
     Compteur2: 0,
     Compteur3: 0,
-    Compteur4: 0,
+    Compteur4: 5,
     Compteur5: 0,
     Compteur6: 0,
     Compteur7: 0,
