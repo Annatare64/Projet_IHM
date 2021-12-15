@@ -165,7 +165,9 @@ class MagazinesRec extends Component {
               What is internet of things (IoT)?
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button onClick={this.Handlecompt}>J'aime</button>
+            <button className="btnC" onClick={this.Handlecompt}>
+              J'aime
+            </button>
             <span>{this.state.Compteur}</span>
           </div>
           <div className="informatique">
@@ -177,7 +179,9 @@ class MagazinesRec extends Component {
               Artificial Intelligence(AI)
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button onClick={this.Handlecompt1}>J'aime</button>
+            <button className="btnC" onClick={this.Handlecompt1}>
+              J'aime
+            </button>
             <span>{this.state.Compteur1}</span>{" "}
           </div>
 
@@ -190,7 +194,9 @@ class MagazinesRec extends Component {
               Basic latkes
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button onClick={this.Handlecompt2}>J'aime</button>
+            <button className="btnC" onClick={this.Handlecompt2}>
+              J'aime
+            </button>
             <span>{this.state.Compteur2}</span>{" "}
           </div>
           {/*  <div className="info" className="informatique">

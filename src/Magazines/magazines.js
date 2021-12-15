@@ -45,14 +45,15 @@ class Magazines extends Component {
     });
   };
 
-  affichage = (e) => {
-    let value = "/magazines";
+  handleSubmit = (e) => {
     console.log(this.state.Recherche);
     if (this.state.Recherche === "informatique") {
-      value = this.state.Informatique;
+      this.setState({
+        Informatique: "/magazinesinfo"
+      });
     }
     if (this.state.Recherche === "cuisine") {
-      value = this.state.Cuisine;
+      Informatique: "/magazinescui";
     }
   };
 
@@ -123,13 +124,6 @@ class Magazines extends Component {
   };}*/
 
   render() {
-    const Button = ({ increment }) => {
-      return <button>+{increment}</button>;
-    };
-    const App = () => {
-      let count = 0;
-    };
-
     return (
       <div className="tete">
         <form className="recherche">
@@ -142,7 +136,7 @@ class Magazines extends Component {
             value={this.state.Recherche}
             onSubmit={this.handleSubmit}
           />
-          <Link to="/magazinesinfo">
+          <Link to={this.state.Informatique}>
             <button className="btnmar" onClick={this.affichage}>
               Recherche
             </button>
@@ -174,7 +168,9 @@ class Magazines extends Component {
               What is internet of things (IoT)?
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button onClick={this.Handlecompt}>J'aime</button>
+            <button className="btnC" onClick={this.Handlecompt}>
+              J'aime
+            </button>
             <span>{this.state.Compteur}</span>
           </div>
           <div className="informatique">
@@ -186,7 +182,9 @@ class Magazines extends Component {
               Artificial Intelligence(AI)
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button onClick={this.Handlecompt1}>J'aime</button>
+            <button className="btnC" onClick={this.Handlecompt1}>
+              J'aime
+            </button>
             <span>{this.state.Compteur1}</span>{" "}
           </div>
           <div className="informatique">
@@ -198,7 +196,9 @@ class Magazines extends Component {
               Basic latkes
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button onClick={this.Handlecompt2}>J'aime</button>
+            <button className="btnC" onClick={this.Handlecompt2}>
+              J'aime
+            </button>
             <span>{this.state.Compteur2}</span>{" "}
           </div>
           <div className="informatique">
@@ -210,7 +210,9 @@ class Magazines extends Component {
               Spanish tortilla
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button onClick={this.Handlecompt3}>J'aime</button>
+            <button className="btnC" onClick={this.Handlecompt3}>
+              J'aime
+            </button>
             <span>{this.state.Compteur3}</span>
           </div>
           <div className="informatique">
@@ -222,7 +224,9 @@ class Magazines extends Component {
               What is internet of things (IoT)?
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button onClick={this.Handlecompt4}>J'aime</button>
+            <button className="btnC" onClick={this.Handlecompt4}>
+              J'aime
+            </button>
             <span>{this.state.Compteur4}</span>{" "}
           </div>
           <div className="informatique">
@@ -234,7 +238,9 @@ class Magazines extends Component {
               What is internet of things (IoT)?
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button onClick={this.Handlecompt5}>J'aime</button>
+            <button className="btnC" onClick={this.Handlecompt5}>
+              J'aime
+            </button>
             <span>{this.state.Compteur5}</span>{" "}
           </div>
           <div className="informatique">
@@ -246,7 +252,9 @@ class Magazines extends Component {
               What is internet of things (IoT)?
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button onClick={this.Handlecompt6}>J'aime</button>
+            <button className="btnC" onClick={this.Handlecompt6}>
+              J'aime
+            </button>
             <span>{this.state.Compteur6}</span>{" "}
           </div>
           <div className="informatique">
@@ -258,7 +266,9 @@ class Magazines extends Component {
               What is internet of things (IoT)?
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button onClick={this.Handlecompt7}>J'aime</button>
+            <button className="btnC" onClick={this.Handlecompt7}>
+              J'aime
+            </button>
             <span>{this.state.Compteur7}</span>{" "}
           </div>
           <div className="informatique">
@@ -270,7 +280,9 @@ class Magazines extends Component {
               What is internet of things (IoT)?
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button onClick={this.Handlecompt8}>J'aime</button>
+            <button className="btnC" onClick={this.Handlecompt8}>
+              J'aime
+            </button>
             <span>{this.state.Compteur8}</span>{" "}
           </div>
           <div className="informatique">
@@ -282,7 +294,9 @@ class Magazines extends Component {
               What is internet of things (IoT)?
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button onClick={this.Handlecompt9}>J'aime</button>
+            <button className="btnC" onClick={this.Handlecompt9}>
+              J'aime
+            </button>
             <span>{this.state.Compteur9}</span>
           </div>
         </div>

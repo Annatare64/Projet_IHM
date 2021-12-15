@@ -108,3 +108,16 @@ background-color: #1e366d;
   margin-left: center;
   margin-top: 2%;
 }
+
+.btnC {
+  font-size: 15px;
+  background-color: #366aeb;
+  font-family: Arial;
+  color: #ffffff;
+  float: right;
+}
+span {
+  color: black;
+  font-weight: bold;
+  float: right;
+}
