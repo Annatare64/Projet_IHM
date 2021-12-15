@@ -1,51 +1,57 @@
 Table {
-  border: 1px solid black; /* auront une bordure de 1px */
+	border: 1px solid black; /* auront une bordure de 1px */
 }
 
 td {
-  border: 1px solid black; /* auront une bordure de 1px */
+	border: 1px solid black; /* auront une bordure de 1px */
 }
 
 .container1 {
-  border-radius: 50px;
-  width: 61%;
-  height: 500px;
-  background-color: white;
-  padding: 35px 15px 5px;
-  margin: 10%;
-  margin-top: 2%;
+	border-radius: 50px;
+	width: 61%;
+	height: 500px;
+	background-color: white;
+	padding: 35px 15px 5px;
+	margin: 10%;
+	margin-top: 2%;
 }
 .container1:before,
 .tete1 {
-  background-color: #309ea144;
-  width: 100%;
-  height: 800px;
-  padding: 35px 15px 5px;
-  margin-top: 0%;
+	background-color: #309ea144;
+	width: 100%;
+	height: 800px;
+	padding: 35px 15px 5px;
+	margin-top: 0%;
 }
 
 .tete1:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .bouton1 {
-  background-color: #0000cd;
-  color: white;
-  font-weight: bold;
-  font: "Arial";
-  width: 100%;
-  text-align: center;
+	background-color: #313fa6;
+	color: white;
+	font-weight: bold;
+	font: "Arial";
+	width: 100%;
+	text-align: left;
+	position: relative;
+	font-size: 15px;
+	border-radius: 5px;
 }
+
 .bouton1::after {
-  content: " ▼";
+	content: " ▼";
+	position: absolute;
+	right: 0%;
 }
 
 .formulaire {
-  text-align: left;
+	text-align: left;
 }
 
 table {
-  margin: auto;
+	margin: auto;
 }
