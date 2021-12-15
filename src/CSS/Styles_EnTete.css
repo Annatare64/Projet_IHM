@@ -39,8 +39,9 @@ nav a {
 }
 
 nav a:hover {
-  color: rgba(0, 47, 255, 0.473);
-  border-bottom: 2px solid rgb(255, 0, 0);
+  color: #1e366d;
+  border-bottom: 2px solid #309ea144;
+  background-color: white;
 }
 
 .sous {
