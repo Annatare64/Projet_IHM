@@ -17,6 +17,7 @@ class Magazinescui extends Component {
   state = {
     Recherche: "",
     value: "",
+    Cuisine: "/magazinescui",
     Compteur: 0,
     Compteur1: 0,
     Compteur2: 0,
@@ -26,7 +27,8 @@ class Magazinescui extends Component {
     Compteur6: 0,
     Compteur7: 0,
     Compteur8: 0,
-    Compteur9: 0
+    Compteur9: 0,
+    Informatique: "/magazinesinfo"
   };
   onChange = (event) => {
     this.setState({
@@ -34,10 +36,15 @@ class Magazinescui extends Component {
     });
   };
 
-  affichage = (event) => {
+  handleSubmit = (e) => {
     console.log(this.state.Recherche);
     if (this.state.Recherche === "informatique") {
-      ReactDOM.render(<Magazinesinfo />, document.getElementById("root"));
+      this.setState({
+        Informatique: "/magazinesinfo"
+      });
+    }
+    if (this.state.Recherche === "cuisine") {
+      Informatique: "/magazinescui";
     }
   };
   Handlecompt = (e) => {
@@ -92,8 +99,15 @@ class Magazinescui extends Component {
     });
   };
   render() {
+    var value = "";
+    if (this.state.Recherche === "informatique") {
+      value = this.state.Informatique;
+    }
+    if (this.state.Recherche === "cuisine") {
+      value = this.state.Cuisine;
+    }
     return (
-      <div className="En-tete1">
+      <div className="tete">
         <form className="recherche" onSubmit={this.handleSubmit}>
           <input
             className="inputr"
@@ -102,7 +116,7 @@ class Magazinescui extends Component {
             name="Recherche"
             onChange={this.onChange}
           />
-          <Link to="/magazinesinfo">
+          <Link to={value}>
             <button className="btnmar" onClick={this.affichage}>
               Recherche
             </button>

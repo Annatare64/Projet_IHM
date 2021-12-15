@@ -45,15 +45,15 @@ class Magazines extends Component {
     });
   };
 
-  handleSubmit = (e) => {
+  handleSubmit = (event) => {
     console.log(this.state.Recherche);
     if (this.state.Recherche === "informatique") {
-      this.setState({
-        Informatique: "/magazinesinfo"
-      });
+      this.state.Informatique;
     }
     if (this.state.Recherche === "cuisine") {
-      Informatique: "/magazinescui";
+      this.setState({
+        Cuisine: "/magazinescui"
+      });
     }
   };
 
@@ -124,6 +124,13 @@ class Magazines extends Component {
   };}*/
 
   render() {
+    var value = "";
+    if (this.state.Recherche === "informatique") {
+      value = this.state.Informatique;
+    }
+    if (this.state.Recherche === "cuisine") {
+      value = this.state.Cuisine;
+    }
     return (
       <div className="tete">
         <form className="recherche">
@@ -136,7 +143,7 @@ class Magazines extends Component {
             value={this.state.Recherche}
             onSubmit={this.handleSubmit}
           />
-          <Link to={this.state.Informatique}>
+          <Link to={value}>
             <button className="btnmar" onClick={this.affichage}>
               Recherche
             </button>
