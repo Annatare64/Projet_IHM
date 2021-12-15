@@ -17,7 +17,9 @@ import { useHistory } from "react-router-dom";
 
 class Magazines extends Component {
   state = {
-    Recherche: ""
+    Recherche: "",
+    Informatique: "/magazinesinfo",
+    Cuisine: "/magazinescui"
   };
 
   displayInfoCui(value) {
@@ -33,13 +35,14 @@ class Magazines extends Component {
     });
   };
 
-  affichage = (event) => {
+  affichage = (e) => {
+    let value = "/magazines";
     console.log(this.state.Recherche);
     if (this.state.Recherche === "informatique") {
-      ReactDOM.render(<Magazinesinfo />, document.getElementById("root"));
+      value = this.state.Informatique;
     }
     if (this.state.Recherche === "cuisine") {
-      ReactDOM.render(<Magazinescui />, document.getElementById("root"));
+      value = this.state.Cuisine;
     }
   };
 
@@ -60,9 +63,10 @@ class Magazines extends Component {
 
   render() {
     return (
-      <div className="En-tete1">
-        <form>
+      <div className="tete">
+        <form className="recherche">
           <input
+            className="recherche"
             type="text"
             placeholder="Rechercher"
             name="Recherche"
@@ -70,9 +74,11 @@ class Magazines extends Component {
             value={this.state.Recherche}
             onSubmit={this.handleSubmit}
           />
-          <button className="btnmag" onClick={this.affichage}>
-            Recherche
-          </button>
+          <Link to="/magazinesinfo">
+            <button className="btnmag" onClick={this.affichage}>
+              Recherche
+            </button>
+          </Link>
           <Link to="/magazinesfav">
             <button className="btnmag">Favoris</button>
           </Link>
@@ -112,7 +118,6 @@ class Magazines extends Component {
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
           </div>
-
           <div className="informatique">
             <img src={logo2} alt="logo" />
             <a
@@ -130,6 +135,66 @@ class Magazines extends Component {
               href="https://www.jamieoliver.com/recipes/eggs-recipes/spanish-tortilla/"
             >
               Spanish tortilla
+            </a>
+            <p className="non"> Ecrire un résumé du sujet</p>
+          </div>
+          <div className="informatique">
+            <img src={logo} alt="logo" />
+            <a
+              className="oui"
+              href="https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-IoT"
+            >
+              What is internet of things (IoT)?
+            </a>
+            <p className="non"> Ecrire un résumé du sujet</p>
+          </div>
+          <div className="informatique">
+            <img src={logo} alt="logo" />
+            <a
+              className="oui"
+              href="https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-IoT"
+            >
+              What is internet of things (IoT)?
+            </a>
+            <p className="non"> Ecrire un résumé du sujet</p>
+          </div>
+          <div className="informatique">
+            <img src={logo} alt="logo" />
+            <a
+              className="oui"
+              href="https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-IoT"
+            >
+              What is internet of things (IoT)?
+            </a>
+            <p className="non"> Ecrire un résumé du sujet</p>
+          </div>
+          <div className="informatique">
+            <img src={logo} alt="logo" />
+            <a
+              className="oui"
+              href="https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-IoT"
+            >
+              What is internet of things (IoT)?
+            </a>
+            <p className="non"> Ecrire un résumé du sujet</p>
+          </div>
+          <div className="informatique">
+            <img src={logo} alt="logo" />
+            <a
+              className="oui"
+              href="https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-IoT"
+            >
+              What is internet of things (IoT)?
+            </a>
+            <p className="non"> Ecrire un résumé du sujet</p>
+          </div>
+          <div className="informatique">
+            <img src={logo} alt="logo" />
+            <a
+              className="oui"
+              href="https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-IoT"
+            >
+              What is internet of things (IoT)?
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
           </div>
