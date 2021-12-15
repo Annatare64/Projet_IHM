@@ -1,11 +1,13 @@
 .bouton {
-	background-color: #0000cd;
+	background-color: #313fa6;
 	color: white;
 	font-weight: bold;
 	font: "Arial";
 	width: 100%;
 	text-align: left;
 	position: relative;
+	font-size: 15px;
+	border-radius: 5px;
 }
 
 .bouton::after {
@@ -29,6 +31,7 @@
 	width: 700px;
 	padding: 10px;
 }
+
 #titre {
 	text-align: center;
 	right: 0%;
@@ -71,4 +74,8 @@
 .Term1:hover {
 	background: #1e366d;
 	text-decoration: none;
+}
+
+.LiExo {
+	list-style: square;
 }

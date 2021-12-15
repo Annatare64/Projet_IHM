@@ -146,9 +146,10 @@ class ExoGramm extends React.Component {
 			<div className="tete2">
 				<div className="container2">
 					<form onSubmit={this.onSubmit}>
-						<h4>
+						<h4 className="Titre2">
 							<u>{title}</u>
 						</h4>
+						<br />
 						<h5>
 							<button className="bouton" onClick={HandleChange1}>
 								Débutant

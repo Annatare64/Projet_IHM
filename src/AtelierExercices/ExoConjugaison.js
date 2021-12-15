@@ -105,11 +105,14 @@ class ExoConj extends React.Component {
 			function (exo) {
 				if (exo.difficulté == "Facile") {
 					return (
-						<li className="LiExo">
+						<li>
 							<h4> {exo.temps} </h4>
-							<Link to="/ExoConj1">&ensp;Exercice 1 </Link>
-							<br />
-							<a href="#" /*onClick={displayExoConj}*/>&ensp;Exercice 2 </a>
+							<li className="LiExo">
+								<Link to="/ExoConj1">&ensp;Exercice 1 </Link>
+							</li>
+							<li className="LiExo">
+								<a href="#" /*onClick={displayExoConj}*/>&ensp;Exercice 2 </a>
+							</li>
 						</li>
 					)
 				}
@@ -148,18 +151,19 @@ class ExoConj extends React.Component {
 			<div className="tete2">
 				<div className="container2">
 					<form onSubmit={this.onSubmit}>
-						<h4>
+						<h4 className="Titre2">
 							<u>{title}</u>
 						</h4>
+						<br />
 						<h5>
 							<button className="bouton" onClick={HandleChange1}>
-								Facile
+								Débutant
 							</button>
 							{x && <h5>{elementsFacile}</h5>}
 						</h5>
 						<h5>
 							<button className="bouton" onClick={HandleChange2}>
-								Modéré
+								Intermédiaire
 							</button>
 							{y && (
 								<h5>
@@ -171,7 +175,7 @@ class ExoConj extends React.Component {
 						</h5>
 						<h5>
 							<button className="bouton" onClick={HandleChange3}>
-								Difficile
+								Expert
 							</button>
 							{z && (
 								<h5>
