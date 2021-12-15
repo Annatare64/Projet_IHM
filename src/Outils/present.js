@@ -54,59 +54,63 @@ class Présent extends React.Component {
       <div className="tete1">
         <div className="container1">
           <form className="formulaire" onSubmit={this.onSubmit}>
-            <h3>
-              <u>{title}</u>
-            </h3>
-            <br />
-            <h4>Qu’est-ce que le présent simple anglais ?</h4>
-            <h5>
+            <div className="Centrer">
+              <h3>
+                <u>{title}</u>
+              </h3>
               <br />
-              On emploie le présent simple anglais (simple present) pour parler
-              de faits habituels ou plus ou moins permanents (actions qui se
-              répètent), de vérités générales, d’actions qui se succèdent ou de
-              faits à venir qui auront lieu à un horaire déterminé et officiel.
-              Le présent simple anglais n’est pas lié à un moment précis du
-              présent comme en français. Grâce à nos explications simples et
-              claires accompagnées de nombreux exemples, tu apprendras tout ce
-              qu’il faut savoir sur l’emploi et la règle de formation du présent
-              simple en anglais et tu pourras tester tes nouvelles connaissances
-              avec nos exercices.
-            </h5>
-            <br />
-            <h4> Quand employer le présent simple en anglais ?</h4>
-            <br />
-            <h5>
-              En anglais, on utilise le présent simple dans les cas suivants :
+              <h4>Qu’est-ce que le présent simple anglais ?</h4>
+              <h5>
+                <br />
+                On emploie le présent simple anglais (simple present) pour
+                parler de faits habituels ou plus ou moins permanents (actions
+                qui se répètent), de vérités générales, d’actions qui se
+                succèdent ou de faits à venir qui auront lieu à un horaire
+                déterminé et officiel. Le présent simple anglais n’est pas lié à
+                un moment précis du présent comme en français. Grâce à nos
+                explications simples et claires accompagnées de nombreux
+                exemples, tu apprendras tout ce qu’il faut savoir sur l’emploi
+                et la règle de formation du présent simple en anglais et tu
+                pourras tester tes nouvelles connaissances avec nos exercices.
+              </h5>
               <br />
-              <br /> Actions régulières ou (in)habituelles (always, never,
-              rarely, often) <br />
-              Exemple : He plays football every Tuesday. <br />
-              <br /> Actions successives, sans commentaire
-              <br /> Exemple : After school Colin goes home, packs his bag, puts
-              on his football shirt and then he goes to football training.
+              <h4> Quand employer le présent simple en anglais ?</h4>
               <br />
-              <br /> Vérités générales, faits plus ou moins permanents,
-              caractéristiques (avec des verbes d’état notamment)
+              <h5>
+                En anglais, on utilise le présent simple dans les cas suivants :
+                <br />
+                <br /> Actions régulières ou (in)habituelles (always, never,
+                rarely, often) <br />
+                Exemple : He plays football every Tuesday. <br />
+                <br /> Actions successives, sans commentaire
+                <br /> Exemple : After school Colin goes home, packs his bag,
+                puts on his football shirt and then he goes to football
+                training.
+                <br />
+                <br /> Vérités générales, faits plus ou moins permanents,
+                caractéristiques (avec des verbes d’état notamment)
+                <br />
+                Exemples : He is a forward. A forward tries to score goals for
+                his team. <br />
+                <br />
+                Renvoi à un fait à venir (il est certain qu’il aura lieu),
+                horaire/programme officiel (toujours avec un repère temporel)
+                <br /> Exemples : The bus leaves at half past four. His training
+                starts at five o’clock.
+                <br /> <br />
+                Verbes d’opinion et de perception pour exprimer une opinion, un
+                goût, un souhait, un sentiment, etc. <br />
+                Exemple : Colin likes football
+              </h5>
+              .
               <br />
-              Exemples : He is a forward. A forward tries to score goals for his
-              team. <br />
               <br />
-              Renvoi à un fait à venir (il est certain qu’il aura lieu),
-              horaire/programme officiel (toujours avec un repère temporel)
-              <br /> Exemples : The bus leaves at half past four. His training
-              starts at five o’clock.
-              <br /> <br />
-              Verbes d’opinion et de perception pour exprimer une opinion, un
-              goût, un souhait, un sentiment, etc. <br />
-              Exemple : Colin likes football
-            </h5>
-            .
-            <br />
-            <br />
-            <h5>
-              <Link to="/Guide">Retour aux leçons</Link>
-            </h5>
+              <h5>
+                <Link to="/Guide">Retour aux leçons</Link>
+              </h5>
+            </div>
           </form>
+
           {this.renderDonnees()}
         </div>
       </div>
