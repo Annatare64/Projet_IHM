@@ -15,7 +15,7 @@ img {
   background-color: white;
   padding: 35px 15px 5px;
   margin: 10%;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 .container:before,
 .container:after {
@@ -66,3 +66,58 @@ img {
 }
 
 background-color: #1e366d;
+
+.btnmag {
+  position: relative;
+  margin-left: 5%;
+  width: 30%;
+}
+.btnmaz {
+  margin-left: 5%;
+  width: 30%;
+  background-color: #366aeb;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 3px 7px 3px 7px;
+  text-decoration: none;
+}
+.btnmaf {
+  background-color: #366aeb;
+  width: 30%;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 3px 7px 3px 7px;
+  text-decoration: none;
+}
+
+.btnmar {
+  font-size: 20px;
+  background-color: #366aeb;
+  font-family: Arial;
+  color: #ffffff;
+}
+
+.inputr {
+  font-size: 20px;
+  width: 57%;
+}
+
+.recherche1 {
+  margin-left: center;
+  margin-top: 2%;
+}
+
+.btnC {
+  font-size: 15px;
+  background-color: #366aeb;
+  font-family: Arial;
+  color: #ffffff;
+  float: right;
+}
+span {
+  color: black;
+  font-weight: bold;
+  float: right;
+}

@@ -53,42 +53,58 @@ class Présent extends React.Component {
     return (
       <div className="tete1">
         <div className="container1">
-          <form onSubmit={this.onSubmit}>
-            <h4>
+          <form className="formulaire" onSubmit={this.onSubmit}>
+            <h3>
               <u>{title}</u>
-            </h4>
+            </h3>
             <br />
+            <h4>Qu’est-ce que le présent simple anglais ?</h4>
             <h5>
-              Comment le former C’est la fameuse forme en V+ing qui pose tant de
-              problèmes aux francophones. Il se forme avec « être » (to be),
-              suivi du participe présent, c’est-à-dire le verbe auquel on ajoute
-              la terminaison -ing. Conjuguons, par exemple, le verbe to scream
-              (crier). I am screaming you are screaming he / she is screaming we
-              are screaming you are screaming they are screaming Négation : I am
-              not screaming ou I’m not screaming Interrogation : am I screaming?
-              Interro-négation : am I not screaming? Encore une fois, ce n’est
-              pas bien compliqué, il suffit de connaître la conjugaison du verbe
-              to be. Attention cependant, le radical de certains verbes peut
-              changer lorsque l’on forme le participe présent ou passé. Voici
-              les cas qui posent problème : Redoublement de la consonne : bet →
-              betting, fit → fitting. Chute du e final lorsqu’il est muet : take
-              → taking, observe → observing. Mais pas toujours : age → ageing
-              (en anglais britannique) Voyelle i qui devient y : lie → lying,
-              tie → tying. Verbe dont le radical se termine par c : panic →
-              panicking. Quand l’utiliser Le présent continu correspond tout
-              d’abord à notre « être en train de faire », il désigne donc une
-              action qui se produit au moment où l’on parle et qui n’est donc
-              pas terminée. « Je suis en train de manger une pomme » se dira en
-              anglais I’m eating an apple. Plus rarement, il permet de décrire
-              une action qui n’a lieu qu’à un instant très précis et qui
-              n’aurait pas cours autrement. Par exemple, You’re being foolish
-              (tu es en train de te comporter comme un idiot), par opposition
-              avec You’re foolish (tu es idiot).
+              <br />
+              On emploie le présent simple anglais (simple present) pour parler
+              de faits habituels ou plus ou moins permanents (actions qui se
+              répètent), de vérités générales, d’actions qui se succèdent ou de
+              faits à venir qui auront lieu à un horaire déterminé et officiel.
+              Le présent simple anglais n’est pas lié à un moment précis du
+              présent comme en français. Grâce à nos explications simples et
+              claires accompagnées de nombreux exemples, tu apprendras tout ce
+              qu’il faut savoir sur l’emploi et la règle de formation du présent
+              simple en anglais et tu pourras tester tes nouvelles connaissances
+              avec nos exercices.
             </h5>
             <br />
+            <h4> Quand employer le présent simple en anglais ?</h4>
             <br />
             <h5>
-              <Link to="/Guide">Retour au leçon</Link>
+              En anglais, on utilise le présent simple dans les cas suivants :
+              <br />
+              <br /> Actions régulières ou (in)habituelles (always, never,
+              rarely, often) <br />
+              Exemple : He plays football every Tuesday. <br />
+              <br /> Actions successives, sans commentaire
+              <br /> Exemple : After school Colin goes home, packs his bag, puts
+              on his football shirt and then he goes to football training.
+              <br />
+              <br /> Vérités générales, faits plus ou moins permanents,
+              caractéristiques (avec des verbes d’état notamment)
+              <br />
+              Exemples : He is a forward. A forward tries to score goals for his
+              team. <br />
+              <br />
+              Renvoi à un fait à venir (il est certain qu’il aura lieu),
+              horaire/programme officiel (toujours avec un repère temporel)
+              <br /> Exemples : The bus leaves at half past four. His training
+              starts at five o’clock.
+              <br /> <br />
+              Verbes d’opinion et de perception pour exprimer une opinion, un
+              goût, un souhait, un sentiment, etc. <br />
+              Exemple : Colin likes football
+            </h5>
+            .
+            <br />
+            <br />
+            <h5>
+              <Link to="/Guide">Retour aux leçons</Link>
             </h5>
           </form>
           {this.renderDonnees()}
