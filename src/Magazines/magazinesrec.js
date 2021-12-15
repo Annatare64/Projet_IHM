@@ -68,13 +68,19 @@ class MagazinesRec extends Component {
             onChange={this.onChange}
             value={this.state.Recherche}
           />
-          <button onClick={this.affichage}>Recherche</button>
-          <Link to="/magazinesfav">
-            <button className="btnmag">Favoris</button>
+          <Link to="/magazinesinfo">
+            <button className="btnmar" onClick={this.affichage}>
+              Recherche
+            </button>
           </Link>
-          <Link to="/magazinesrec">
-            <button className="btnmag">Récent</button>
-          </Link>
+          <div className="recherche1">
+            <Link to="/magazinesfav">
+              <button className="btnmaf">Favoris</button>
+            </Link>
+            <Link to="/magazinesrec">
+              <button className="btnmaz">Récent</button>
+            </Link>
+          </div>
         </form>
         {/*{datas
         .filter((val) => {

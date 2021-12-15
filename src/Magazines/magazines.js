@@ -66,7 +66,7 @@ class Magazines extends Component {
       <div className="tete">
         <form className="recherche">
           <input
-            className="recherche"
+            className="inputr"
             type="text"
             placeholder="Rechercher"
             name="Recherche"
@@ -75,16 +75,18 @@ class Magazines extends Component {
             onSubmit={this.handleSubmit}
           />
           <Link to="/magazinesinfo">
-            <button className="btnmag" onClick={this.affichage}>
+            <button className="btnmar" onClick={this.affichage}>
               Recherche
             </button>
           </Link>
-          <Link to="/magazinesfav">
-            <button className="btnmag">Favoris</button>
-          </Link>
-          <Link to="/magazinesrec">
-            <button className="btnmag">Récent</button>
-          </Link>
+          <div className="recherche1">
+            <Link to="/magazinesfav">
+              <button className="btnmaf">Favoris</button>
+            </Link>
+            <Link to="/magazinesrec">
+              <button className="btnmaz">Récent</button>
+            </Link>
+          </div>
         </form>
         {/*{datas
         .filter((val) => {

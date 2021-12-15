@@ -10,6 +10,7 @@ import logo from "../../public/image/Capture.PNG";
 import logo1 from "../../public/image/Capture1.PNG";
 import logo2 from "../../public/image/Capture2.PNG";
 import logo3 from "../../public/image/Capture3.PNG";
+import { Link, NavLink } from "react-router-dom";
 import { render } from "react-dom";
 
 class Magazinescui extends Component {
@@ -40,9 +41,19 @@ class Magazinescui extends Component {
             name="Recherche"
             onChange={this.onChange}
           />
-          <button onClick={this.affichage}>Recherche</button>
-          <button onClick={this.handleCLickFav}>Favoris</button>
-          <button onClick={this.handleClickRec}>Récent</button>
+          <Link to="/magazinesinfo">
+            <button className="btnmar" onClick={this.affichage}>
+              Recherche
+            </button>
+          </Link>
+          <div className="recherche1">
+            <Link to="/magazinesfav">
+              <button className="btnmaf">Favoris</button>
+            </Link>
+            <Link to="/magazinesrec">
+              <button className="btnmaz">Récent</button>
+            </Link>
+          </div>
         </form>
         {/*{datas
       .filter((val) => {
