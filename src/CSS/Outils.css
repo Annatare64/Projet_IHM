@@ -31,15 +31,18 @@ td {
 }
 
 .bouton1 {
-  background-color: #0000cd;
+  background-color: #313fa6;
   color: white;
   font-weight: bold;
   font: "Arial";
   width: 100%;
-  text-align: center;
+  text-align: left;
+  position: relative;
 }
 .bouton1::after {
   content: " ▼";
+  position: absolute;
+  right: 0%;
 }
 
 .formulaire {

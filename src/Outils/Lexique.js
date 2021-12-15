@@ -32,17 +32,17 @@ class Lexique extends React.Component {
       {
         id: 4,
         Theme: "Passé",
-        type: "Le passé continu (past continuous)"
+        type: "L'informatique"
       },
       {
         id: 5,
         Theme: "Passé",
-        type: "Le passé composé (Vie Quotidienne perfect)"
+        type: "La menuiserie"
       },
       {
         id: 6,
         Theme: "Passé",
-        type: "Le passé composé continu (Vie Quotidienne perfect continuous)"
+        type: "La vente et le commerce"
       },
       {
         id: 7,
@@ -161,7 +161,7 @@ class Lexique extends React.Component {
             </h5>
             <h5>
               <button className="bouton1" onClick={HandleChange3}>
-                Futur
+                Le monde des transports
               </button>
               {z && (
                 <h5>
