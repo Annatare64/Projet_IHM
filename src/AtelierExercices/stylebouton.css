@@ -1,20 +1,28 @@
 .bouton {
-	background-color: #0000cd;
+	background-color: #224db1;
 	color: white;
 	font-weight: bold;
 	font: "Arial";
+	font-size: 15px;
 	width: 100%;
-	text-align: center;
+	text-align: left;
+	position: relative;
 }
 .bouton::after {
+	position: absolute;
 	content: " ▼";
+	right: 0%;
+}
+
+.liExo {
+	list-style-type: square;
 }
 
 #titre {
 	text-align: center;
 }
 
-.container {
+.container1 {
 	border-radius: 50px;
 	width: 80%;
 	height: 600px;
@@ -24,22 +32,22 @@
 	margin-top: 5%;
 }
 
-.container:before,
-.container:after {
+.container1:before,
+.container1:after {
 	content: "";
 	display: table;
 	clear: both;
 }
-.container div {
+.container1 div {
 	float: left;
 	width: 200px;
 	height: 200px;
 	text-align: center;
 }
 
-.tete {
+.tete1 {
 	background-color: #309ea144;
 	width: 100%;
 	height: 100%;
-	position: absolute;
+	margin-top: -5%;
 }

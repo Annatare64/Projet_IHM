@@ -103,7 +103,7 @@ class ExoGramm extends React.Component {
 			function (exo) {
 				if (exo.difficulté == "Facile") {
 					return (
-						<li>
+						<li className="liExo">
 							<Link to="/ExoGramm1">
 								&ensp;{exo.type}
 								{exo.id} : {exo.nom}{" "}
@@ -117,7 +117,7 @@ class ExoGramm extends React.Component {
 			function (exo) {
 				if (exo.difficulté == "Modéré") {
 					return (
-						<li>
+						<li className="liExo">
 							<a href="#" onClick={() => this.displayExoVocab(exo.id)}>
 								&ensp;{exo.type}
 								{exo.id} : {exo.nom}{" "}
@@ -131,7 +131,7 @@ class ExoGramm extends React.Component {
 			function (exo) {
 				if (exo.difficulté == "Difficile") {
 					return (
-						<li>
+						<li className="liExo">
 							<a href="#" onClick={() => this.displayExoVocab(exo.id)}>
 								&ensp;{exo.type}
 								{exo.id} : {exo.nom}{" "}
@@ -143,10 +143,10 @@ class ExoGramm extends React.Component {
 		)
 
 		return (
-			<div className="tete">
-				<div className="container">
+			<div className="tete1">
+				<div className="container1">
 					<form onSubmit={this.onSubmit}>
-						<h4>
+						<h4 id="titre">
 							<u>{title}</u>
 						</h4>
 						<h5>
