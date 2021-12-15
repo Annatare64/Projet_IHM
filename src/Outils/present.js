@@ -79,28 +79,27 @@ class Présent extends React.Component {
               <h5>
                 En anglais, on utilise le présent simple dans les cas suivants :
                 <br />
-                <br /> 1.Actions régulières ou (in)habituelles (always, never,
+                <br /> Actions régulières ou (in)habituelles (always, never,
                 rarely, often) <br />
                 Exemple : He plays football every Tuesday. <br />
-                <br />
-                2. Actions successives, sans commentaire
+                <br /> Actions successives, sans commentaire
                 <br /> Exemple : After school Colin goes home, packs his bag,
                 puts on his football shirt and then he goes to football
                 training.
                 <br />
-                <br /> 3.Vérités générales, faits plus ou moins permanents,
+                <br /> Vérités générales, faits plus ou moins permanents,
                 caractéristiques (avec des verbes d’état notamment)
                 <br />
                 Exemples : He is a forward. A forward tries to score goals for
                 his team. <br />
                 <br />
-                4.Renvoi à un fait à venir (il est certain qu’il aura lieu),
+                Renvoi à un fait à venir (il est certain qu’il aura lieu),
                 horaire/programme officiel (toujours avec un repère temporel)
                 <br /> Exemples : The bus leaves at half past four. His training
                 starts at five o’clock.
                 <br /> <br />
-                5.Verbes d’opinion et de perception pour exprimer une opinion,
-                un goût, un souhait, un sentiment, etc. <br />
+                Verbes d’opinion et de perception pour exprimer une opinion, un
+                goût, un souhait, un sentiment, etc. <br />
                 Exemple : Colin likes football
               </h5>
               .
