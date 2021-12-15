@@ -78,20 +78,22 @@ class Vetement extends React.Component {
     });
 
     return (
-      <div>
-        <form onSubmit={this.onSubmit}>
-          <h4>
-            <u>{title}</u>
-          </h4>
-          <br />
-          <table>{TabVet}</table>
-          <br />
-          <br />
-          <h5>
-            <Link to="/Lexique">Retour au lexique</Link>
-          </h5>
-        </form>
-        {this.renderDonnees()}
+      <div className="tete1">
+        <div className="container1">
+          <form onSubmit={this.onSubmit}>
+            <h4>
+              <u>{title}</u>
+            </h4>
+            <br />
+            <table>{TabVet}</table>
+            <br />
+            <br />
+            <h5>
+              <Link to="/Lexique">Retour au lexique</Link>
+            </h5>
+          </form>
+          {this.renderDonnees()}
+        </div>
       </div>
     );
   }

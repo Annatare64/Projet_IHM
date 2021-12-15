@@ -1,53 +1,40 @@
 .bouton {
-	background-color: #224db1;
-	color: white;
-	font-weight: bold;
-	font: "Arial";
-	font-size: 15px;
-	width: 100%;
-	text-align: left;
-	position: relative;
+  background-color: #0000cd;
+  color: white;
+  font-weight: bold;
+  font: "Arial";
+  width: 100%;
+  text-align: center;
 }
 .bouton::after {
-	position: absolute;
-	content: " ▼";
-	right: 0%;
-}
-
-.liExo {
-	list-style-type: square;
+  content: " ▼";
 }
 
 #titre {
-	text-align: center;
+  text-align: center;
+  right: 0%;
 }
 
-.container1 {
-	border-radius: 50px;
-	width: 80%;
-	height: 600px;
-	background-color: white;
-	padding: 35px 15px 5px;
-	margin: 10%;
-	margin-top: 5%;
+.container2 {
+  border-radius: 50px;
+  width: 80%;
+  height: 600px;
+  background-color: white;
+  padding: 35px 15px 5px;
+  margin: 10%;
+  margin-top: 5%;
 }
 
-.container1:before,
-.container1:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-.container1 div {
-	float: left;
-	width: 200px;
-	height: 200px;
-	text-align: center;
+.tete2 {
+  background-color: #309ea144;
+  width: 100%;
+  height: 800px;
+  padding: 35px 15px 5px;
+  margin-top: 0%;
 }
 
-.tete1 {
-	background-color: #309ea144;
-	width: 100%;
-	height: 100%;
-	margin-top: -5%;
+.tete2:after {
+  content: "";
+  display: table;
+  clear: both;
 }

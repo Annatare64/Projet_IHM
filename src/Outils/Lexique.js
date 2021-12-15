@@ -135,35 +135,45 @@ class Lexique extends React.Component {
     );
 
     return (
-      <form onSubmit={this.onSubmit}>
-        <h4>
-          <u>{title}</u>
-        </h4>
-        <h5>
-          <button onClick={HandleChange1}>Vie Quotidienne</button>
-          {x && <h5>{elementsFacile}</h5>}
-        </h5>
-        <h5>
-          <button onClick={HandleChange2}>Monde du Travail</button>
-          {y && (
+      <div className="tete1">
+        <div className="container1">
+          <form onSubmit={this.onSubmit}>
+            <h4>
+              <u>{title}</u>
+            </h4>
             <h5>
-              <a href="#" onClick={this.displayvoc1Vocab}>
-                {elementsModéré}
-              </a>
+              <button className="bouton1" onClick={HandleChange1}>
+                Vie Quotidienne
+              </button>
+              {x && <h5>{elementsFacile}</h5>}
             </h5>
-          )}
-        </h5>
-        <h5>
-          <button onClick={HandleChange3}>Futur</button>
-          {z && (
             <h5>
-              <a href="#" onClick={this.displayvoc1Vocab}>
-                {elementsDifficile}
-              </a>
+              <button className="bouton1" onClick={HandleChange2}>
+                Monde du Travail
+              </button>
+              {y && (
+                <h5>
+                  <a href="#" onClick={this.displayvoc1Vocab}>
+                    {elementsModéré}
+                  </a>
+                </h5>
+              )}
             </h5>
-          )}
-        </h5>
-      </form>
+            <h5>
+              <button className="bouton1" onClick={HandleChange3}>
+                Futur
+              </button>
+              {z && (
+                <h5>
+                  <a href="#" onClick={this.displayvoc1Vocab}>
+                    {elementsDifficile}
+                  </a>
+                </h5>
+              )}
+            </h5>
+          </form>
+        </div>
+      </div>
     );
   }
 }

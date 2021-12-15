@@ -145,35 +145,45 @@ class ExoConj extends React.Component {
     );
 
     return (
-      <form onSubmit={this.onSubmit}>
-        <h4>
-          <u>{title}</u>
-        </h4>
-        <h5>
-          <button onClick={HandleChange1}>Facile</button>
-          {x && <h5>{elementsFacile}</h5>}
-        </h5>
-        <h5>
-          <button onClick={HandleChange2}>Modéré</button>
-          {y && (
+      <div className="tete2">
+        <div className="container2">
+          <form onSubmit={this.onSubmit}>
+            <h4>
+              <u>{title}</u>
+            </h4>
             <h5>
-              <a href="#" onClick={this.displayExo1Vocab}>
-                {elementsModéré}
-              </a>
+              <button className="bouton" onClick={HandleChange1}>
+                Facile
+              </button>
+              {x && <h5>{elementsFacile}</h5>}
             </h5>
-          )}
-        </h5>
-        <h5>
-          <button onClick={HandleChange3}>Difficile</button>
-          {z && (
             <h5>
-              <a href="#" onClick={this.displayExo1Vocab}>
-                {elementsDifficile}
-              </a>
+              <button className="bouton" onClick={HandleChange2}>
+                Modéré
+              </button>
+              {y && (
+                <h5>
+                  <a href="#" onClick={this.displayExo1Vocab}>
+                    {elementsModéré}
+                  </a>
+                </h5>
+              )}
             </h5>
-          )}
-        </h5>
-      </form>
+            <h5>
+              <button className="bouton" onClick={HandleChange3}>
+                Difficile
+              </button>
+              {z && (
+                <h5>
+                  <a href="#" onClick={this.displayExo1Vocab}>
+                    {elementsDifficile}
+                  </a>
+                </h5>
+              )}
+            </h5>
+          </form>
+        </div>
+      </div>
     );
   }
 }
