@@ -16,7 +16,17 @@ import { Link, NavLink } from "react-router-dom";
 
 class MagazinesRec extends Component {
   state = {
-    Recherche: ""
+    Recherche: "",
+    Compteur: 0,
+    Compteur1: 0,
+    Compteur2: 0,
+    Compteur3: 0,
+    Compteur4: 0,
+    Compteur5: 0,
+    Compteur6: 0,
+    Compteur7: 0,
+    Compteur8: 0,
+    Compteur9: 0
   };
 
   displayInfoCui(value) {
@@ -41,6 +51,58 @@ class MagazinesRec extends Component {
       ReactDOM.render(<Magazinescui />, document.getElementById("root"));
     }
   };
+
+  Handlecompt = (e) => {
+    this.setState({
+      Compteur: this.state.Compteur + 1
+    });
+  };
+
+  Handlecompt1 = (e) => {
+    this.setState({
+      Compteur1: this.state.Compteur1 + 1
+    });
+  };
+  Handlecompt2 = (e) => {
+    this.setState({
+      Compteur2: this.state.Compteur2 + 1
+    });
+  };
+  Handlecompt3 = (e) => {
+    this.setState({
+      Compteur3: this.state.Compteur3 + 1
+    });
+  };
+  Handlecompt4 = (e) => {
+    this.setState({
+      Compteur4: this.state.Compteur4 + 1
+    });
+  };
+  Handlecompt5 = (e) => {
+    this.setState({
+      Compteur5: this.state.Compteur5 + 1
+    });
+  };
+  Handlecompt6 = (e) => {
+    this.setState({
+      Compteur6: this.state.Compteur6 + 1
+    });
+  };
+  Handlecompt7 = (e) => {
+    this.setState({
+      Compteur7: this.state.Compteur7 + 1
+    });
+  };
+  Handlecompt8 = (e) => {
+    this.setState({
+      Compteur8: this.state.Compteur8 + 1
+    });
+  };
+  Handlecompt9 = (e) => {
+    this.setState({
+      Compteur9: this.state.Compteur9 + 1
+    });
+  };
   //console.log(this.state.Recherche);
   /*{ const [datas, setDatas] = useState([]);
   const [searchTerm, setSearchTerm] = useState([]);
@@ -61,7 +123,7 @@ class MagazinesRec extends Component {
       <div className="tete">
         <form className="recherche" onSubmit={this.handleSubmit}>
           <input
-            className="recherche"
+            className="inputr"
             type="text"
             placeholder="Rechercher"
             name="Recherche"
@@ -103,6 +165,8 @@ class MagazinesRec extends Component {
               What is internet of things (IoT)?
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
+            <button onClick={this.Handlecompt}>J'aime</button>
+            <span>{this.state.Compteur}</span>
           </div>
           <div className="informatique">
             <img src={logo1} alt="logo" />
@@ -113,6 +177,8 @@ class MagazinesRec extends Component {
               Artificial Intelligence(AI)
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
+            <button onClick={this.Handlecompt1}>J'aime</button>
+            <span>{this.state.Compteur1}</span>{" "}
           </div>
 
           <div className="informatique">
@@ -124,6 +190,8 @@ class MagazinesRec extends Component {
               Basic latkes
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
+            <button onClick={this.Handlecompt2}>J'aime</button>
+            <span>{this.state.Compteur2}</span>{" "}
           </div>
           {/*  <div className="info" className="informatique">
             <img src={logo3} alt="logo" />
