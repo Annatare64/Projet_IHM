@@ -80,7 +80,7 @@ class Vetement extends React.Component {
     return (
       <div className="tete1">
         <div className="container1">
-          <form className="formulaire" onSubmit={this.onSubmit}>
+          <form onSubmit={this.onSubmit}>
             <h4>
               <u>{title}</u>
             </h4>
@@ -89,7 +89,7 @@ class Vetement extends React.Component {
             <br />
             <br />
             <h5>
-              <Link to="/Lexique">Retour aux lexiques</Link>
+              <Link to="/Lexique">Retour au lexique</Link>
             </h5>
           </form>
           {this.renderDonnees()}

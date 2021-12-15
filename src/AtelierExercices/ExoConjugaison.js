@@ -105,7 +105,7 @@ class ExoConj extends React.Component {
 			function (exo) {
 				if (exo.difficulté == "Facile") {
 					return (
-						<li>
+						<li className="LiExo">
 							<h4> {exo.temps} </h4>
 							<Link to="/ExoConj1">&ensp;Exercice 1 </Link>
 							<br />
@@ -119,7 +119,7 @@ class ExoConj extends React.Component {
 			function (exo) {
 				if (exo.difficulté == "Modéré") {
 					return (
-						<li>
+						<li className="LiExo">
 							<a href="#" onClick={() => this.displayExoVocab(exo.id)}>
 								&ensp;{exo.type}
 								{exo.id} : {exo.nom}{" "}
@@ -133,7 +133,7 @@ class ExoConj extends React.Component {
 			function (exo) {
 				if (exo.difficulté == "Difficile") {
 					return (
-						<li>
+						<li className="LiExo">
 							<a href="#" onClick={() => this.displayExoVocab(exo.id)}>
 								&ensp;{exo.type}
 								{exo.id} : {exo.nom}{" "}

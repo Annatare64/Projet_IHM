@@ -11,26 +11,12 @@ import logo from "../../public/image/Capture.PNG";
 import logo1 from "../../public/image/Capture1.PNG";
 import logo2 from "../../public/image/Capture2.PNG";
 import logo3 from "../../public/image/Capture3.PNG";
-import logo4 from "../../public/image/largepreview (1).png";
-import logo5 from "../../public/image/largepreview.png";
 import { render } from "react-dom";
 import { Link, NavLink } from "react-router-dom";
 
 class MagazinesFav extends Component {
   state = {
-    Recherche: "",
-    Compteur: 0,
-    Cuisine: "/magazinescui",
-    Compteur1: 0,
-    Compteur2: 1,
-    Compteur3: 3,
-    Compteur4: 5,
-    Compteur5: 0,
-    Compteur6: 0,
-    Compteur7: 0,
-    Compteur8: 0,
-    Compteur9: 0,
-    Informatique: "/magazinesinfo"
+    Recherche: ""
   };
 
   displayInfoCui(value) {
@@ -46,68 +32,16 @@ class MagazinesFav extends Component {
     });
   };
 
-  handleSubmit = (e) => {
+  affichage = (event) => {
     console.log(this.state.Recherche);
     if (this.state.Recherche === "informatique") {
-      this.setState({
-        Informatique: "/magazinesinfo"
-      });
+      ReactDOM.render(<Magazinesinfo />, document.getElementById("root"));
     }
     if (this.state.Recherche === "cuisine") {
-      Informatique: "/magazinescui";
+      ReactDOM.render(<Magazinescui />, document.getElementById("root"));
     }
   };
-  Handlecompt = (e) => {
-    this.setState({
-      Compteur: this.state.Compteur + 1
-    });
-  };
 
-  Handlecompt1 = (e) => {
-    this.setState({
-      Compteur1: this.state.Compteur1 + 1
-    });
-  };
-  Handlecompt2 = (e) => {
-    this.setState({
-      Compteur2: this.state.Compteur2 + 1
-    });
-  };
-  Handlecompt3 = (e) => {
-    this.setState({
-      Compteur3: this.state.Compteur3 + 1
-    });
-  };
-  Handlecompt4 = (e) => {
-    this.setState({
-      Compteur4: this.state.Compteur4 + 1
-    });
-  };
-  Handlecompt5 = (e) => {
-    this.setState({
-      Compteur5: this.state.Compteur5 + 1
-    });
-  };
-  Handlecompt6 = (e) => {
-    this.setState({
-      Compteur6: this.state.Compteur6 + 1
-    });
-  };
-  Handlecompt7 = (e) => {
-    this.setState({
-      Compteur7: this.state.Compteur7 + 1
-    });
-  };
-  Handlecompt8 = (e) => {
-    this.setState({
-      Compteur8: this.state.Compteur8 + 1
-    });
-  };
-  Handlecompt9 = (e) => {
-    this.setState({
-      Compteur9: this.state.Compteur9 + 1
-    });
-  };
   //console.log(this.state.Recherche);
   /*{ const [datas, setDatas] = useState([]);
   const [searchTerm, setSearchTerm] = useState([]);
@@ -124,37 +58,24 @@ class MagazinesFav extends Component {
   };}*/
 
   render() {
-    var value = "";
-    if (this.state.Recherche === "informatique") {
-      value = this.state.Informatique;
-    }
-    if (this.state.Recherche === "cuisine") {
-      value = this.state.Cuisine;
-    }
     return (
       <div className="tete">
         <form className="recherche" onSubmit={this.handleSubmit}>
           <input
-            className="inputr"
+            className="recherche"
             type="text"
             placeholder="Rechercher"
             name="Recherche"
             onChange={this.onChange}
             value={this.state.Recherche}
           />
-          <Link to={value}>
-            <button className="btnmar" onClick={this.affichage}>
-              Recherche
-            </button>
+          <button onClick={this.affichage}>Recherche</button>
+          <Link to="/magazinesfav">
+            <button className="btnmag">Favoris</button>
           </Link>
-          <div className="recherche1">
-            <Link to="/magazinesfav">
-              <button className="btnmaf">Favoris</button>
-            </Link>
-            <Link to="/magazinesrec">
-              <button className="btnmaz">Récent</button>
-            </Link>
-          </div>
+          <Link to="/magazinesrec">
+            <button className="btnmag">Récent</button>
+          </Link>
         </form>
         {/*{datas
         .filter((val) => {
@@ -169,45 +90,6 @@ class MagazinesFav extends Component {
         })}*/}
         <div className="container">
           <div className="informatique">
-            <img src={logo4} alt="logo" />
-            <a className="oui" href={logo4}>
-              The Emergence of Internet of Thing
-            </a>
-            <p className="non"> Ecrire un résumé du sujet</p>
-            <button className="btnC" onClick={this.Handlecompt4}>
-              J'aime
-            </button>
-            <span>{this.state.Compteur4}</span>{" "}
-          </div>
-          <div className="info" className="informatique">
-            <img src={logo3} alt="logo" />
-            <a
-              className="oui"
-              href="https://www.jamieoliver.com/recipes/eggs-recipes/spanish-tortilla/"
-            >
-              Spanish tortilla
-            </a>
-            <p className="non"> Ecrire un résumé du sujet</p>
-            <button className="btnC" onClick={this.Handlecompt3}>
-              J'aime
-            </button>
-            <span>{this.state.Compteur3}</span>
-          </div>
-          <div className="informatique">
-            <img src={logo2} alt="logo" />
-            <a
-              className="oui"
-              href="https://www.jamieoliver.com/recipes/potato-recipes/basic-latkes/"
-            >
-              Basic latkes
-            </a>
-            <p className="non"> Ecrire un résumé du sujet</p>
-            <button className="btnC" onClick={this.Handlecompt2}>
-              J'aime
-            </button>
-            <span>{this.state.Compteur2}</span>{" "}
-          </div>
-          <div className="informatique">
             <img src={logo} alt="logo" />
             <a
               className="oui"
@@ -216,10 +98,6 @@ class MagazinesFav extends Component {
               What is internet of things (IoT)?
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button className="btnC" onClick={this.Handlecompt}>
-              J'aime
-            </button>
-            <span>{this.state.Compteur}</span>
           </div>
           <div className="info" className="informatique">
             <img src={logo1} alt="logo" />
@@ -230,23 +108,28 @@ class MagazinesFav extends Component {
               Artificial Intelligence(AI)
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button className="btnC" onClick={this.Handlecompt1}>
-              J'aime
-            </button>
-            <span>{this.state.Compteur1}</span>{" "}
           </div>
 
           <div className="informatique">
-            <img src={logo5} alt="logo" />
-            <a className="oui" href={logo5}>
-              The Future of Intrnet of Things
+            <img src={logo2} alt="logo" />
+            <a
+              className="oui"
+              href="https://www.jamieoliver.com/recipes/potato-recipes/basic-latkes/"
+            >
+              Basic latkes
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
-            <button className="btnC" onClick={this.Handlecompt5}>
-              J'aime
-            </button>
-            <span>{this.state.Compteur5}</span>{" "}
           </div>
+          {/*  <div className="info" className="informatique">
+            <img src={logo3} alt="logo" />
+            <a
+              className="oui"
+              href="https://www.jamieoliver.com/recipes/eggs-recipes/spanish-tortilla/"
+            >
+              Spanish tortilla
+            </a>
+            <p className="non"> Ecrire un résumé du sujet</p>
+          </div>*/}
         </div>
       </div>
     );
