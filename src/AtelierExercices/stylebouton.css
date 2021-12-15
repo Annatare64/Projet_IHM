@@ -1,73 +1,40 @@
 .bouton {
-	background-color: #0000cd;
-	color: white;
-	font-weight: bold;
-	font: "Arial";
-	width: 100%;
-	text-align: left;
-	position: relative;
+  background-color: #0000cd;
+  color: white;
+  font-weight: bold;
+  font: "Arial";
+  width: 100%;
+  text-align: center;
 }
 .bouton::after {
-	content: " ▼";
-	position: absolute;
-	right: 0%;
+  content: " ▼";
 }
 
-.Titre2 {
-	text-align: center;
-}
-
-.ExoCentre {
-	margin: auto;
-	width: 400px;
-	padding: 10px;
-}
-
-#ExoCentre2 {
-	margin: auto;
-	width: 700px;
-	padding: 10px;
-}
 #titre {
-	text-align: center;
-	right: 0%;
+  text-align: center;
+  right: 0%;
 }
 
 .container2 {
-	border-radius: 50px;
-	width: 80%;
-	height: 600px;
-	background-color: white;
-	padding: 35px 15px 5px;
-	margin: 10%;
-	margin-top: 5%;
+  border-radius: 50px;
+  width: 80%;
+  height: 600px;
+  background-color: white;
+  padding: 35px 15px 5px;
+  margin: 10%;
+  margin-top: 5%;
 }
 
 .tete2 {
-	background-color: #309ea144;
-	width: 100%;
-	height: 800px;
-	padding: 35px 15px 5px;
-	margin-top: 0%;
+  background-color: #309ea144;
+  width: 100%;
+  height: 800px;
+  padding: 35px 15px 5px;
+  margin-top: 0%;
 }
 
 .tete2:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.Term1 {
-	background-color: #366aeb;
-	border-radius: 10px;
-	font-family: Arial;
-	color: #ffffff;
-	font-size: 15px;
-	padding: 3px 7px 3px 7px;
-	text-decoration: none;
-}
-
-.Term1:hover {
-	background: #1e366d;
-	text-decoration: none;
+  content: "";
+  display: table;
+  clear: both;
 }
