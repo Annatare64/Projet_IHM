@@ -11,6 +11,8 @@ import logo from "../../public/image/Capture.PNG";
 import logo1 from "../../public/image/Capture1.PNG";
 import logo2 from "../../public/image/Capture2.PNG";
 import logo3 from "../../public/image/Capture3.PNG";
+import logo4 from "../../public/image/largepreview (1).png";
+import logo5 from "../../public/image/largepreview.png";
 import { render } from "react-dom";
 import { Link, NavLink } from "react-router-dom";
 import { useHistory } from "react-router-dom";
@@ -223,12 +225,9 @@ class Magazines extends Component {
             <span>{this.state.Compteur3}</span>
           </div>
           <div className="informatique">
-            <img src={logo} alt="logo" />
-            <a
-              className="oui"
-              href="https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-IoT"
-            >
-              What is internet of things (IoT)?
+            <img src={logo4} alt="logo" />
+            <a className="oui" href={logo4}>
+              The Emergence of Internet of Thing
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
             <button className="btnC" onClick={this.Handlecompt4}>
@@ -237,12 +236,9 @@ class Magazines extends Component {
             <span>{this.state.Compteur4}</span>{" "}
           </div>
           <div className="informatique">
-            <img src={logo} alt="logo" />
-            <a
-              className="oui"
-              href="https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-IoT"
-            >
-              What is internet of things (IoT)?
+            <img src={logo5} alt="logo" />
+            <a className="oui" href={logo5}>
+              The Future of Intrnet of Things
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
             <button className="btnC" onClick={this.Handlecompt5}>

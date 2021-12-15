@@ -10,6 +10,8 @@ import logo from "../../public/image/Capture.PNG";
 import logo1 from "../../public/image/Capture1.PNG";
 import logo2 from "../../public/image/Capture2.PNG";
 import logo3 from "../../public/image/Capture3.PNG";
+import logo4 from "../../public/image/largepreview (1).png";
+import logo5 from "../../public/image/largepreview.png";
 import { Link, NavLink } from "react-router-dom";
 import { render } from "react-dom";
 
@@ -179,6 +181,28 @@ class Magazinesinfos extends Component {
               J'aime
             </button>
             <span>{this.state.Compteur1}</span>{" "}
+          </div>
+          <div className="informatique">
+            <img src={logo4} alt="logo" />
+            <a className="oui" href={logo4}>
+              The Emergence of Internet of Thing
+            </a>
+            <p className="non"> Ecrire un résumé du sujet</p>
+            <button className="btnC" onClick={this.Handlecompt4}>
+              J'aime
+            </button>
+            <span>{this.state.Compteur4}</span>{" "}
+          </div>
+          <div className="informatique">
+            <img src={logo5} alt="logo" />
+            <a className="oui" href={logo5}>
+              The Future of Intrnet of Things
+            </a>
+            <p className="non"> Ecrire un résumé du sujet</p>
+            <button className="btnC" onClick={this.Handlecompt5}>
+              J'aime
+            </button>
+            <span>{this.state.Compteur5}</span>{" "}
           </div>
         </div>
       </div>

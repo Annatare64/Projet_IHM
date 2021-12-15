@@ -10,6 +10,8 @@ import logo from "../../public/image/Capture.PNG";
 import logo1 from "../../public/image/Capture1.PNG";
 import logo2 from "../../public/image/Capture2.PNG";
 import logo3 from "../../public/image/Capture3.PNG";
+import logo4 from "../../public/image/largepreview (1).png";
+import logo5 from "../../public/image/largepreview.png";
 import { Link, NavLink } from "react-router-dom";
 import { render } from "react-dom";
 
