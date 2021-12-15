@@ -100,10 +100,7 @@ class Magazines extends Component {
         <div className="container">
           <div className="informatique">
             <img src={logo} alt="logo" />
-            <a
-              className="oui"
-              href="https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-IoT"
-            >
+            <a className="oui" href={logo}>
               What is internet of things (IoT)?
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>

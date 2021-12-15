@@ -10,7 +10,7 @@ import { Link, NavLink } from "react-router-dom";
 class Accueil extends Component {
   render() {
     return (
-      <div>
+      <div className="tete">
         <div>
           <p> Explication de la partis Magazines</p>
           <p> Explication de la partis Atelier</p>

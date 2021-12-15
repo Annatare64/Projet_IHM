@@ -40,9 +40,10 @@ class Magazinesinfos extends Component {
 
   render() {
     return (
-      <div className="En-tete1">
-        <form onSubmit={this.handleSubmit}>
+      <div className="tete">
+        <form className="recherche" onSubmit={this.handleSubmit}>
           <input
+            className="recherche"
             type="text"
             placeholder="Rechercher"
             name="Recherche"
