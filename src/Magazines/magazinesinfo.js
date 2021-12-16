@@ -164,7 +164,7 @@ class Magazinesinfos extends Component {
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
             <button className="btnC" onClick={this.Handlecompt}>
-              J'aime
+              👍
             </button>
             <span>{this.state.Compteur}</span>{" "}
           </div>
@@ -178,7 +178,7 @@ class Magazinesinfos extends Component {
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
             <button className="btnC" onClick={this.Handlecompt1}>
-              J'aime
+              👍
             </button>
             <span>{this.state.Compteur1}</span>{" "}
           </div>
@@ -189,7 +189,7 @@ class Magazinesinfos extends Component {
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
             <button className="btnC" onClick={this.Handlecompt4}>
-              J'aime
+              👍
             </button>
             <span>{this.state.Compteur4}</span>{" "}
           </div>
@@ -200,7 +200,7 @@ class Magazinesinfos extends Component {
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
             <button className="btnC" onClick={this.Handlecompt5}>
-              J'aime
+              👍
             </button>
             <span>{this.state.Compteur5}</span>{" "}
           </div>

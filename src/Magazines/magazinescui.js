@@ -154,7 +154,7 @@ class Magazinescui extends Component {
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
             <button className="btnC" onClick={this.Handlecompt}>
-              J'aime
+              👍
             </button>
             <span>{this.state.Compteur}</span>{" "}
           </div>
@@ -168,7 +168,7 @@ class Magazinescui extends Component {
             </a>
             <p className="non"> Ecrire un résumé du sujet</p>
             <button className="btnC" onClick={this.Handlecompt1}>
-              J'aime
+              👍
             </button>
             <span>{this.state.Compteur1}</span>{" "}
           </div>
