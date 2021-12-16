@@ -81,7 +81,7 @@ class ExoVocab extends React.Component {
 		var countFacile = 0,
 			countModéré = 0,
 			countDifficile = 0
-		const title = "Exercices de Vocabulaire :"
+		const title = "Exercices de Vocabulaire"
 		const elementsFacile = this.TabEx.exercices.map(
 			function (exo) {
 				if (exo.difficulté == "Facile") {

@@ -93,14 +93,14 @@ class Lexique extends React.Component {
 		const y = this.state.divcontainer2
 		const z = this.state.divcontainer3
 
-		const title = "Vocabulaire :"
+		const title = "Lexique"
 		const elementsFacile = this.TabLex.vocabulaire.map(
 			function (voc) {
 				if (voc.Theme == "Vie Quotidienne") {
 					return (
-						<li>
+						<li className="LiExo">
 							<Link to="/Vetement">
-								&ensp;{voc.type}: {voc.nom}
+								&ensp;{voc.type} {voc.nom}
 							</Link>
 						</li>
 					)
@@ -111,9 +111,9 @@ class Lexique extends React.Component {
 			function (voc) {
 				if (voc.Theme === "Passé") {
 					return (
-						<li>
+						<li className="LiExo">
 							<a href="#" onClick={() => this.displayvocVocab(voc.id)}>
-								&ensp;{voc.type}: {voc.nom}
+								&ensp;{voc.type} {voc.nom}
 							</a>
 						</li>
 					)
@@ -124,9 +124,9 @@ class Lexique extends React.Component {
 			function (voc) {
 				if (voc.Theme == "Futur") {
 					return (
-						<li>
+						<li className="LiExo">
 							<a href="#" onClick={() => this.displayvocVocab(voc.id)}>
-								&ensp;{voc.type}: {voc.nom}
+								&ensp;{voc.type} {voc.nom}
 							</a>
 						</li>
 					)

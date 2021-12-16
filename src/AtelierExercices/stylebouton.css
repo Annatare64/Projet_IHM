@@ -6,18 +6,15 @@
 	width: 100%;
 	text-align: left;
 	position: relative;
-	font-size: 15px;
+	font-size: 25px;
 	border-radius: 5px;
+	padding: 3px 7px 3px 7px;
 }
 
 .bouton::after {
 	content: " ▼";
 	position: absolute;
 	right: 0%;
-}
-
-.Titre2 {
-	text-align: center;
 }
 
 .ExoCentre {
@@ -48,7 +45,7 @@
 }
 
 .tete2 {
-	background-color: #309ea144;
+	background-color: #d7f9ff;
 	width: 100%;
 	height: 800px;
 	padding: 35px 15px 5px;
@@ -78,4 +75,10 @@
 
 .LiExo {
 	list-style: square;
+	font-size: 15px;
+}
+
+.Titre2 {
+	text-align: center;
+	font-size: 40px;
 }

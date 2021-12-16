@@ -92,14 +92,14 @@ class Guide extends React.Component {
 		const y = this.state.divcontainer2
 		const z = this.state.divcontainer3
 
-		const title = "Leçon de Conjugaison :"
+		const title = "Guide Grammatical"
 		const elementsFacile = this.TabGui.leçon.map(
 			function (gui) {
 				if (gui.temps == "Présent") {
 					return (
-						<li>
+						<li className="LiExo">
 							<Link to="/present">
-								&ensp;{gui.type}: {gui.nom}
+								&ensp;{gui.type} {gui.nom}
 							</Link>
 						</li>
 					)
@@ -110,9 +110,9 @@ class Guide extends React.Component {
 			function (gui) {
 				if (gui.temps == "Passé") {
 					return (
-						<li>
+						<li className="LiExo">
 							<a href="#" onClick={() => this.displayguiVocab(gui.id)}>
-								&ensp;{gui.type}: {gui.nom}
+								&ensp;{gui.type} {gui.nom}
 							</a>
 						</li>
 					)
@@ -123,9 +123,9 @@ class Guide extends React.Component {
 			function (gui) {
 				if (gui.temps == "Futur") {
 					return (
-						<li>
+						<li className="LiExo">
 							<a href="#" onClick={() => this.displayguiVocab(gui.id)}>
-								&ensp;{gui.type}: {gui.nom}
+								&ensp;{gui.type} {gui.nom}
 							</a>
 						</li>
 					)

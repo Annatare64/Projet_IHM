@@ -98,7 +98,7 @@ class ExoGramm extends React.Component {
 		const y = this.state.divcontainer2
 		const z = this.state.divcontainer3
 
-		const title = "Exercices de Grammaire :"
+		const title = "Exercices de Grammaire"
 		const elementsFacile = this.TabEx.exercices.map(
 			function (exo) {
 				if (exo.difficulté == "Facile") {
