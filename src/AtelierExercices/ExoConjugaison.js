@@ -6,7 +6,7 @@ import ExoConj1 from "./exercices/ConjExo"
 
 class ExoConj extends React.Component {
 	state = {
-		divcontainer1: true,
+		divcontainer1: false,
 		divcontainer2: false,
 		divcontainer3: false
 	}
@@ -106,7 +106,7 @@ class ExoConj extends React.Component {
 				if (exo.difficulté == "Facile") {
 					return (
 						<li>
-							<h4> {exo.temps} </h4>
+							<h4 className="LiExo"> {exo.temps} </h4>
 							<li className="LiExo">
 								<Link to="/ExoConj1">&ensp;Exercice 1 </Link>
 							</li>
@@ -125,7 +125,7 @@ class ExoConj extends React.Component {
 						<li className="LiExo">
 							<a href="#" onClick={() => this.displayExoVocab(exo.id)}>
 								&ensp;{exo.type}
-								{exo.id} : {exo.nom}{" "}
+								{exo.id} {exo.nom}{" "}
 							</a>
 						</li>
 					)
@@ -139,7 +139,7 @@ class ExoConj extends React.Component {
 						<li className="LiExo">
 							<a href="#" onClick={() => this.displayExoVocab(exo.id)}>
 								&ensp;{exo.type}
-								{exo.id} : {exo.nom}{" "}
+								{exo.id} {exo.nom}{" "}
 							</a>
 						</li>
 					)

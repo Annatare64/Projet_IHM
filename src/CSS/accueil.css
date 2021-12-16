@@ -1,16 +1,33 @@
 .btnacc {
-	border: 10px outset red;
-	height: 300px;
-	width: 300px;
-	margin-left: 100px;
-	font-size: 15px;
-	background-color: #366aeb;
-	font-family: Arial;
-	color: #ffffff;
+	background-color: #313fa6;
+	color: white;
+	font-weight: bold;
+	font: "Arial";
+	width: 100%;
+	text-align: left;
+	position: relative;
+	font-size: 25px;
+	border-radius: 5px;
+	padding: 3px 7px 3px 7px;
+	margin-bottom: 8%;
+	position: relative;
+	margin-top: 15%;
+	margin-right: 110px;
 }
 
+.btnacc::after {
+	content: "➔";
+	position: absolute;
+	right: 0%;
+}
+
+.btnacc:focus {
+	color: #1e366d;
+	border-bottom: 2px solid #309ea144;
+	background-color: white;
+}
 .Divaccueil {
-	text-align: center;
+	vertical-align: middle;
 }
 
 p {
@@ -39,4 +56,14 @@ p {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+#drapeau {
+	float: left;
+	width: 50%;
+	height: 50%;
+	border: 0px;
+}
+.Divaccueil {
+	margin-left: 60%;
 }

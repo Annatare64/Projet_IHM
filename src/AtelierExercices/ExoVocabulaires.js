@@ -7,7 +7,7 @@ import Exo1 from "./exercices/VocabExo.js"
 
 class ExoVocab extends React.Component {
 	state = {
-		divcontainer1: true,
+		divcontainer1: false,
 		divcontainer2: false,
 		divcontainer3: false
 	}
@@ -86,7 +86,7 @@ class ExoVocab extends React.Component {
 			function (exo) {
 				if (exo.difficulté == "Facile") {
 					return (
-						<li>
+						<li className="LiExo">
 							<Link to="/ExoVocab1">
 								&ensp;{exo.type}
 								{exo.id} : {exo.nom}{" "}
@@ -100,7 +100,7 @@ class ExoVocab extends React.Component {
 			if (exo.difficulté == "Modéré") {
 				var countModéré = countModéré + 1
 				return (
-					<li>
+					<li className="LiExo">
 						&ensp;{exo.type}
 						{exo.id} : {exo.nom}{" "}
 					</li>
@@ -111,7 +111,7 @@ class ExoVocab extends React.Component {
 			if (exo.difficulté == "Difficile") {
 				var countDifficile = countDifficile + 1
 				return (
-					<li>
+					<li className="LiExo">
 						&ensp;{exo.type}
 						{exo.id} : {exo.nom}{" "}
 					</li>

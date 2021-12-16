@@ -173,7 +173,7 @@ class ExoConj1 extends React.Component {
 				return (
 					<li>
 						<h4>
-							{exo.id}. {exo.texte1} <font color="green">{exo.verb}</font> {exo.texte2}
+							{exo.id}. {exo.texte1} <font color="#00ff1d">{exo.verb}</font> {exo.texte2}
 						</h4>
 					</li>
 				)
