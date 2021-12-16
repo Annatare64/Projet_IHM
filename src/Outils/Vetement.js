@@ -80,7 +80,7 @@ class Vetement extends React.Component {
     return (
       <div className="tete1">
         <div className="container1">
-          <form className="formulaire" onSubmit={this.onSubmit}>
+          <form className="formulaire1" onSubmit={this.onSubmit}>
             <h4>
               <u>{title}</u>
             </h4>
